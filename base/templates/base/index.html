@@ -1,0 +1,41 @@
+{% extends "base/layout.html" %}
+
+{% load static %}
+
+{% block style %}
+    <link type="text/css" rel="stylesheet" href="{% static 'base/base.css' %}">
+{% endblock style %}
+
+{% block content %}
+    <main>
+        <h1>Main title</h1>
+        <section class="presentation-div">
+            <div id="welcome-message"> 
+                <p id="welcome-parag">Base Index page</p>
+            </div>
+    
+            <!-- <div id="form">
+                <div class="form-field">
+                    <button type="text" name="room" placeholder="">Go to text chat</button>
+                </div>
+    
+                <div class="form-field">
+                    <input type="text" name="username" placeholder="Go to video chat">
+                </div>
+    
+                <div class="form-field">
+                    <input type="submit" value="Join">
+                </div>
+            </div> -->
+
+            <div class="btn-wrapper">
+                <button id="textBtn">Go to text chat (text logo)</button>
+                <button id="videoBtn">Go to video chat (video logo)</button>
+            </div>
+        </section>
+    </main>
+{% endblock content %}
+
+{% block script %}
+    <script type="text/javascript" src="{% static 'base/base.js' %}"></script>
+{% endblock script %}
