@@ -1,3 +1,9 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Message
+
+class AdminMessage(admin.ModelAdmin):
+    list_display = ("name", "body", "timestamp")
+
+
+admin.site.register(Message, AdminMessage)

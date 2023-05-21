@@ -1,5 +1,6 @@
 {% extends "base/layout.html" %}
 {% load static %}
+{% block title %}Text chat{% endblock title %}
 
 {% block style %}
     <link type="text/css" rel="stylesheet" href="{% static 'text/text.css' %}">
@@ -7,9 +8,36 @@
 
 
 {% block content %}
-    <h1 id="text-title">Text index page</h1>
-{% endblock content %}
+<div id="register-card">
+    <div id="logo">
+        <h1>ChatApp</h1>
+        <p>Real time chat app</p>
+        <p>Enter your name and join the chat</p>
+    </div>
+        <div id="register-wrapper">
+            <form id="register-form" onsubmit="registerUsername">
+                <input type="text" name="username" id="username" placeholder="Your username">
+                <input type="submit" value="Enter chat">
+            </form>
+        </div>
+</div>
 
-{% block script %}
+<script type="text/javascript">
+    // Add username to channel
+    let registerForm = document.getElementById("register-form")
+    registerForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let username = e.target.username.value
+        console.log(username)
+
+        sessionStorage.setItem("username", username)
+        if(username){
+            window.open("feed/", "_self") 
+        }
+        
+})
+</script>
+
     <script src="{% static 'text/text.js' %}"></script>
-{% endblock script %}
+    <script type="text/javascript" src="{% static 'text/agora-rtm.js' %}"></script>
+{% endblock content %}

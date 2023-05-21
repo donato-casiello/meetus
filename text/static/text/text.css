@@ -1,3 +1,156 @@
-#text-title {
-    color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+:root {
+    --shadow: 0 1px 6px rgba(32,33,36,.28);
+}
+
+html, body {
+    height: 100%;
+    position: relative;
+}
+
+/* ------ Feed Style ------ */
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#btn-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: end;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+#feed-wrapper {
+    max-width: 600px;
+    height: 100%;
+    margin-top: 30px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;  
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#timestamp {
+    font-size: 10px;
+    margin-right: 3px;
+}
+
+.message-wrapper {
+    background-color: rgb(233, 232, 232);
+    border: 1px solid;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.message-wrapper > p {
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+#message-body {
+    font-family: 'Dancing Script', cursive;
+}
+
+#content{
+    height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;   
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+
+#form > input {
+    margin-top: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+#form > input[type="submit"] {
+    background-color: rgba(66, 133, 244, 0.562);
+}
+
+#form > input[type="submit"]:hover {
+    background-color: rgb(1, 79, 204);
+    cursor: pointer;
+    color: rgb(228, 228, 228);
+    border-color: black;
+}
+
+#leftChatBtn {
+    background-color: rgb(219, 68, 55);
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+}
+
+#leftChatBtn:hover {
+    cursor: pointer;
+    background-color: rgb(246, 21, 0);
+}
+
+/*------- Index style --------- */
+#register-card {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#register-form {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+}
+
+#register-form > input{
+    max-width: 80%;
+    margin-top: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#register-form > input[type="submit"]{
+    /* background-color:; */
+}
+
+#register-wrapper {
+    margin: auto;
 }
