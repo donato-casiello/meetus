@@ -71,7 +71,7 @@ let addMessageToDom = async (message) => {
 
 // Add message to database
 let addMessageToDatabase = async (message) => {
-    let response = await fetch("/add_message/", {
+    let response = await fetch("/text/add_message/", {
         method: "POST", 
         headers: {
             "Content-Type":"application/json", "X-CSRFToken":getCookie('csrftoken')
@@ -89,7 +89,7 @@ let handleUserLeft = async () => {
     await channel.leave({uid:UID})
     console.log({"message":"removed user"})
     sessionStorage.clear()
-    window.open("/", "_self")
+    window.open("/text/", "_self")
 }
 
 // Handle user left the chat

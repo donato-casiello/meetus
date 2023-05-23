@@ -4,7 +4,7 @@
     margin: 0 auto;
 } */
 
-.presentation-div {
+/* .presentation-div {
     width: 400px;
     box-shadow: var(--shadow);
     background-color: #fff;
@@ -14,22 +14,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 
-#welcome-message {
-    text-align: center;
-    margin-top: 1px;
-}
 
-#welcome-message h1{
-    font-size: 36px;
-}
-
-#welcome-message p {
-    margin-top: 2px;
-    font-family: 'Dancing Script', cursive;
-    font-size: 30px;
-}
 
 .form {
     margin: 20px;

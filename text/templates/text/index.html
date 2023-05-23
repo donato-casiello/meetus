@@ -2,29 +2,31 @@
 {% load static %}
 {% block title %}Text chat{% endblock title %}
 
-{% block style %}
-    <link type="text/css" rel="stylesheet" href="{% static 'text/text.css' %}">
-{% endblock style %}
-
-
 {% block content %}
-<div id="register-card">
-    <div id="logo">
-        <h1>ChatApp</h1>
-        <p>Real time chat app</p>
-        <p>Enter your name and join the chat</p>
-    </div>
-        <div id="register-wrapper">
-            <form id="register-form" onsubmit="registerUsername">
-                <input type="text" name="username" id="username" placeholder="Your username">
-                <input type="submit" value="Enter chat">
-            </form>
-        </div>
-</div>
+<main>
+    <section class="form-container">
+
+            <div class="welcome-message"> 
+                <h1>Text Chat</h1>
+                <p class="welcome-parag">Blablabla</p>
+            </div>
+
+            <div>
+                <form class="registration-form" id="form-text" onsubmit="registerUsername">
+                    <div class="form-field">
+                        <input type="text" name="username" id="username" placeholder="Your username">
+                    </div>
+                    <div class="form-field">
+                        <input type="submit" value="Enter chat">
+                    </div>    
+                </form>
+            </div>
+    </section>
+</main>
 
 <script type="text/javascript">
     // Add username to channel
-    let registerForm = document.getElementById("register-form")
+    let registerForm = document.getElementById("form-text")
     registerForm.addEventListener("submit", (e) => {
         e.preventDefault();
         let username = e.target.username.value
@@ -37,7 +39,4 @@
         
 })
 </script>
-
-    <script src="{% static 'text/text.js' %}"></script>
-    <script type="text/javascript" src="{% static 'text/agora-rtm.js' %}"></script>
 {% endblock content %}

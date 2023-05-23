@@ -8,15 +8,18 @@
 
 {% block content %}
     <main>
-        <h1>Main title</h1>
-        <section class="presentation-div">
-            <div id="welcome-message"> 
-                <p id="welcome-parag">Base Index page</p>
+        <section class="form-container">
+
+            <img id="logo" src="{% static 'video/images/logo2.png' %}" alt="videochat">
+            <div class="welcome-message"> 
+                <h1>MeetUs</h1>
+                <p class="welcome-parag">Blablabla</p>
             </div>
 
             <div class="btn-wrapper">
-                <button id="textBtn">Go to text chat (text logo)</button>
-                <button id="videoBtn">Go to video chat (video logo)</button>
+                <button id="textBtn">Text chat (text logo)</button>
+                
+                <button type="submit" id="videoBtn">Video chat (video logo)</button>
             </div>
         </section>
     </main>

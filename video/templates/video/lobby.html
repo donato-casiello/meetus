@@ -1,20 +1,17 @@
 {% extends "base/index.html" %}
 {% load static %}
 {% block title %}Video Chat{% endblock title %}
-{% block style %}
-    <link type="text/css" rel="stylesheet" href="{% static 'video/video.css' %}">
-{% endblock style %}
 
 {% block content %}
     <main>
-        <section id="form-container">
-            <img id="logo" src="{% static 'video/images/logo2.png' %}" alt="videochat">
-
-            <div id="welcome-message"> 
-                <p id="welcome-parag">A group video calling application</p>
+        <section class="form-container">
+            
+            <div class="welcome-message"> 
+                <h1>Video Chat</h1>
+                <p class="welcome-parag">A group video calling application</p>
             </div>
 
-            <form action="" id="form">
+            <form class="registration-form" id="form-video">
                 <div class="form-field">
                     <input type="text" name="room" placeholder="Enter a room name">
                 </div>
@@ -32,7 +29,7 @@
     </main>
 
     <script type="text/javascript">
-        let form = document.getElementById('form')
+        let form = document.getElementById('form-video')
     
         let handleSubmit = async(e) => {
             e.preventDefault()

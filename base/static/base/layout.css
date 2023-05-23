@@ -14,3 +14,112 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+#logo {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.presentation-div {
+    width: 400px;
+    box-shadow: var(--shadow);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.welcome-message {
+    text-align: center;
+    margin-top: 1px;
+}
+
+.welcome-message h1{
+    font-size: 36px;
+}
+
+.welcome-message p {
+    margin-top: 2px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+/* Form Style */
+
+
+.form-container {
+    width: 400px;
+    box-shadow: var(--shadow);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.registration-form {
+    margin: 20px;
+}
+
+.form-field {
+    margin-top: 20px;
+}
+
+.form-field input {
+    width: 100%;
+    border: 2px solid rgba(198, 202, 219, 1);
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box; /* to set the borders of the input */   
+}
+
+.form-field:focus-visible {
+    border-color: #DE808B;
+}
+
+.form-field label {
+    font-size: 16px;
+}
+
+.form-field:focus-visible {
+    border-color: #DE808B;
+}
+
+.form-field label {
+    font-size: 16px;
+}
+
+.form-field input[type="submit"]{
+    background-color: #F0E7B4;
+    color: #DE808B;
+    border: 2px solid;
+    border-color: #B1A464;
+    font-size: 20px;
+}
+
+.form-field input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.form-field input:focus-visible {
+    border-color: #DE808B;
+}
+
+@media screen and (max-width:450px) {
+    .form-container {
+        width: 80%;
+    }
+
+    .welcome-message h1 {
+        font-size: 24px;
+    }
+
+    #logo {
+        width: 200px;
+    }
+}
