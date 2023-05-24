@@ -40,6 +40,7 @@ html, body {
 
 .message-header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -105,13 +106,13 @@ html, body {
     box-sizing: border-box; 
     border: 2px solid rgba(198, 202, 219, 1);
     border-radius: 5px;
-    background-color: rgba(240, 188, 84, 0.562);
+    background-color: rgba(240, 188, 84, 1);
     margin-top: 10px;
     font-family: 'Roboto Mono', monospace;
 }
 
 #form > button:hover {
-    background-color: rgba(217, 114, 70);
+    background-color: rgb(243, 130, 82);
     cursor: pointer;
 
 
