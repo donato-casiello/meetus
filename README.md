@@ -3,6 +3,8 @@ Django application for real-time chat and video call.
 
 Final project for CS50's Web Programming with Python and JavaScript. 
 
+# Add images
+
 ## Distinctiveness and Complexity
 * **Hadle more apps**: this project contains three apps, called "base", "text" and "video". These three applications communicate with each other. It was necessary to organize a solid structure to make them work at their best;
 * **Handle shared files**: the three apps share many files, in particular static files; it was challenging to manage these files between the apps, mostly CSS and JS files
