@@ -3,6 +3,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Roboto+Mono:wght@200&display=swap');
+
 
 
 :root{
@@ -11,13 +15,25 @@
  
 body {
     background-color: #FDF7D0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
-#logo {
+p {
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Header style */
+
+#main-logo {
     display: block;
     width: 300px;
     margin: 0 auto;
+}
+
+.sec-logo {
+    display: block;
+    width: 100px;
+    margin: 10px auto;
 }
 
 .presentation-div {
@@ -38,13 +54,20 @@ body {
 }
 
 .welcome-message h1{
-    font-size: 36px;
+    font-size: 56px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.sec-h1 {
+    font-size: 56px;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(240, 188, 84);
 }
 
 .welcome-message p {
     margin-top: 2px;
-    font-family: 'Dancing Script', cursive;
-    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
 }
 
 /* Form Style */
@@ -78,16 +101,8 @@ body {
     box-sizing: border-box; /* to set the borders of the input */   
 }
 
-.form-field:focus-visible {
-    border-color: #DE808B;
-}
-
 .form-field label {
     font-size: 16px;
-}
-
-.form-field:focus-visible {
-    border-color: #DE808B;
 }
 
 .form-field label {
@@ -95,19 +110,30 @@ body {
 }
 
 .form-field input[type="submit"]{
-    background-color: #F0E7B4;
-    color: #DE808B;
-    border: 2px solid;
-    border-color: #B1A464;
+    border: 2px solid rgba(198, 202, 219, 1);
     font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .form-field input[type="submit"]:hover {
     cursor: pointer;
+    background-color: rgba(217, 114, 70, 0.9);
 }
 
 .form-field input:focus-visible {
     border-color: #DE808B;
+}
+
+/* Redirect style */
+
+.redirect-logo {
+    color:  rgba(217, 114, 70);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.redirect-logo:hover {
+    cursor: pointer;
 }
 
 @media screen and (max-width:450px) {
@@ -119,7 +145,11 @@ body {
         font-size: 24px;
     }
 
-    #logo {
+    #main-logo {
         width: 200px;
+    }
+
+    .sec-logo {
+        width: 100px;
     }
 }

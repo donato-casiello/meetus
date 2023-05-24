@@ -9,9 +9,17 @@
         <link type="text/css" rel="stylesheet" href="{% static 'base/layout.css' %}">
         <link type="text/css" rel="stylesheet" href="{% static 'text/text.css' %}">
         <link type="text/css" rel="stylesheet" href="{% static 'video/video.css' %}">
+        {% comment %} Font awesome {% endcomment %}
+        <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'fontawesomefree/css/brands.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
         {% block style %}{% endblock style %}
     </head>
     <body>
         {% block content %}{% endblock content %}
+        {% comment %} Font awesome js {% endcomment %}
+        <script src="{% static 'fontawesomefree/js/fontawesome.js' %}"></script>
+        <script src="{% static 'fontawesomefree/js/solid.js' %}"></script>
+        <script src="{% static 'fontawesomefree/js/brands.js' %}"></script>
     </body>
 </html>

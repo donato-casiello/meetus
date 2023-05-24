@@ -5,10 +5,13 @@
 {% block content %}
 <main>
     <section class="form-container">
-
+        <div class="redirect-logo">
+            <span id="HomeBtn"><i class="fa-solid fa-house fa-xl"></i></span>
+        </div>
+        <img class="sec-logo" src="{% static 'text/images/text-logo.svg' %}" alt="Text logo">
             <div class="welcome-message"> 
-                <h1>Text Chat</h1>
-                <p class="welcome-parag">Blablabla</p>
+                <h1 class="sec-h1">Text Chat</h1>
+                <p class="welcome-parag">Enter your name <br> Join the chat</p>
             </div>
 
             <div>
@@ -17,8 +20,8 @@
                         <input type="text" name="username" id="username" placeholder="Your username">
                     </div>
                     <div class="form-field">
-                        <input type="submit" value="Enter chat">
-                    </div>    
+                        <input type="submit" value="Join">
+                    </div>
                 </form>
             </div>
     </section>
@@ -35,8 +38,14 @@
         sessionStorage.setItem("username", username)
         if(username){
             window.open("feed/", "_self") 
-        }
-        
-})
+        }        
+    })
+
+    // Redirect to homepage
+    let redirect = document.getElementById("HomeBtn")
+    redirect.addEventListener("click", () => {
+        window.open("/", "_self")
+    })
+
 </script>
 {% endblock content %}

@@ -9,11 +9,6 @@
     --shadow: 0 1px 6px rgba(32,33,36,.28);
 } 
  
-body {
-    background-color: #FDF7D0;
-    font-family: 'Roboto', sans-serif;
-}
-
 /* ---- Room Style ---- */
 
 #room-name-wrapper {
@@ -101,11 +96,8 @@ body {
 
 /* ----- Lobby style ----- */
 
-
-
-
 @media screen and (max-width:450px) {
-    #form-container {
+    .form-container {
         width: 80%;
     }
 

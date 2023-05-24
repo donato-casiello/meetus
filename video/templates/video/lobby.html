@@ -5,10 +5,13 @@
 {% block content %}
     <main>
         <section class="form-container">
-            
+            <div class="redirect-logo">
+                <span id="HomeBtn"><i class="fa-solid fa-house fa-xl"></i></span>
+            </div>
+            <img class="sec-logo" src="{% static 'video/images/video-logo.svg' %}" alt="Video logo">
             <div class="welcome-message"> 
-                <h1>Video Chat</h1>
-                <p class="welcome-parag">A group video calling application</p>
+                <h1 class="sec-h1">Video Chat</h1>
+                <p class="welcome-parag">Enter room name and username <br> Join the call</p>
             </div>
 
             <form class="registration-form" id="form-video">
@@ -52,6 +55,12 @@
         }
     
         form.addEventListener('submit', handleSubmit)
+
+        // Redirect to homepage
+    let redirect = document.getElementById("HomeBtn")
+    redirect.addEventListener("click", () => {
+        window.open("/", "_self")
+    })
     </script>
 
     {% comment %} <script type="text/javascript" src="{% static 'video/video.js' %}"></script> {% endcomment %}

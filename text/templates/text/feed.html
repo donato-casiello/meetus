@@ -5,9 +5,9 @@
 
 {% block content %}
 <div id="header">
-    <h1>Chat</h1>
+    <h1 id="feed-title">Chat</h1>
     <div id="btn-wrapper">
-    <button id="leftChatBtn">X</button>
+    <button id="leftChatBtn"><i class="fa-solid fa-xmark"></i></button>
     </div>
 </div>
 <div id="content">
@@ -23,13 +23,13 @@
             {% endfor %}
         </div>
     
-        <div>
+
             <form action="" id="form">
                 {% csrf_token %}
                 <input type="text" name="body" placeholder="Message">
-                <input type="submit" value="Send">
+                <button type="submit">Send <i class="fa-regular fa-paper-plane"></i></button>
             </form>
-        </div>
+
 </div>
 
 <script type="text/javascript" src="{% static 'text/text.js' %}"></script>

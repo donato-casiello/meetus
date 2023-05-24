@@ -7,9 +7,6 @@ let client;
 let channel;
 
 let username = sessionStorage.getItem("username")
-// if(!username) {
-//      window.open("/", "_self")
-//  }
 
 // Initiate AgoraRTM
 let initiateRTM = async () => {

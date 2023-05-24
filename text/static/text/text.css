@@ -11,6 +11,10 @@ html, body {
 }
 
 /* ------ Feed Style ------ */
+#feed-title {
+    font-family: 'Dancing Script', cursive;
+}
+
 #header {
     display: flex;
     justify-content: space-between;
@@ -39,13 +43,18 @@ html, body {
     justify-content: space-between;
 }
 
+.message-header > b {
+    text-decoration: underline;
+}
+
 #timestamp {
     font-size: 10px;
     margin-right: 3px;
 }
 
 .message-wrapper {
-    background-color: rgb(233, 232, 232);
+    /* background-color: rgb(233, 232, 232); */
+    background-color: white;
     border: 1px solid;
     width: 100%;
     border-radius: 5px;
@@ -58,20 +67,22 @@ html, body {
 }
 
 #message-body {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Roboto Mono', monospace;
 }
 
 #content{
     height: 100vh;
     position: relative;
+    margin-left: 20px;
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 50% 50%;
 }
 
 #form {
     display: flex;
     flex-direction: column;   
-    max-width: 200px;
+    width: 80%;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
     position: fixed;
@@ -80,24 +91,34 @@ html, body {
 }
 
 #form > input {
-    margin-top: 5px;
-    border: 1px solid;
+    width: 100%;
+    border: 2px solid rgba(198, 202, 219, 1);
     border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box; /* to set the borders of the input */   
 }
 
-#form > input[type="submit"] {
-    background-color: rgba(66, 133, 244, 0.562);
+
+#form > button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; 
+    border: 2px solid rgba(198, 202, 219, 1);
+    border-radius: 5px;
+    background-color: rgba(240, 188, 84, 0.562);
+    margin-top: 10px;
+    font-family: 'Roboto Mono', monospace;
 }
 
-#form > input[type="submit"]:hover {
-    background-color: rgb(1, 79, 204);
+#form > button:hover {
+    background-color: rgba(217, 114, 70);
     cursor: pointer;
-    color: rgb(228, 228, 228);
-    border-color: black;
+
+
 }
 
 #leftChatBtn {
-    background-color: rgb(219, 68, 55);
+    background-color: rgba(217, 114, 70);
     border-radius: 5px;
     border: 1px solid black;
     width: 30px;
@@ -106,35 +127,6 @@ html, body {
 
 #leftChatBtn:hover {
     cursor: pointer;
-    background-color: rgb(246, 21, 0);
+    background-color: rgba(218, 48, 48, 0.927);
 }
 
-/*------- Index style --------- */
-
-#logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#register-form {
-    display: flex;
-    flex-direction: column;  
-    align-items: center;
-}
-
-#register-form > input{
-    max-width: 80%;
-    margin-top: 10px;
-    border: 1px solid;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-#register-form > input[type="submit"]{
-    /* background-color:; */
-}
-
-#register-wrapper {
-    margin: auto;
-}

@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     "base", 
     "video", 
     "text",
+    "fontawesomefree",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
