@@ -4,8 +4,9 @@ Django application for real-time chat and video call.
 Final project for the Harvard CS50's Web Programming with Python and JavaScript. 
 
 # Add images
-![text registration](https://github.com/donato-casiello/meetus/blob/main/presentation_img/text_registration.png "text home")
-![text chat](https://github.com/donato-casiello/meetus/blob/main/presentation_img/text_chat.png "text chat")
+![Homepage](https://github.com/donato-casiello/meetus/blob/main/presentation_img/homepage.png "Homepage")
+![text chat](https://github.com/donato-casiello/meetus/blob/main/presentation_img/text_chat.png "Text chat")
+![video call](https://github.com/donato-casiello/meetus/blob/main/presentation_img/video-call.png "Video call")
 
 
 ## Features
