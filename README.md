@@ -60,4 +60,32 @@ Is the application that handle the video call
 
 
 ## Getting started
-1. git clone 
+1. ### Clone repository
+```
+git clone 
+```
+2. ### Install requirements
+```
+pip install -r requirements.txt
+```
+3. ### Update Agora credentials
+In order to use this project you will need to replace Agora credentials. Create an account for free at agora.io. 
+  - To use real-time text chat, create an app and get your `APP ID`. 
+    > Note: Make sure to select "App ID only" for the authentication mechanism when creating your app in the Agora console
+    - in `text.js` replace:
+    ```
+    const APP_ID = "YOUR_APP_ID"
+    ```
+  - To use video call application create an app with also `app_certificate`
+    - in `video/views.py` replace:
+    ```
+    def getToken(request):
+    #Build token with uid
+    appId = "YOUR_APP_ID"
+    appCertificate = "YOUR_APP_CERTIFICATE"
+    ```
+ 4. ### Run the server
+ ```
+ python3 manage.py runserver
+ ```
+  
