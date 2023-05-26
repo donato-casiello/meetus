@@ -65,7 +65,7 @@ Is the application that handle the video call
 1. ### Clone repository
 
 ```
-git clone 
+git clone https://github.com/donato-casiello/meetus.git
 ```
 
 2. ### Install requirements
