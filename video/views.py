@@ -13,8 +13,8 @@ from .models import RoomMember
 
 def getToken(request):
     #Build token with uid
-    appId = "df7e053f27b14c61b7aac4a0bc5ef2e4"
-    appCertificate = "fb8e88adcd63453381f1a4fc7ebae0a0"
+    appId = ""
+    appCertificate = ""
     channelName = request.GET.get("channel")
     uid = random.randint(1, 230)
     expirationTimeInSeconds = 3600 * 24
