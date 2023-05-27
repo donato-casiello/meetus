@@ -1,4 +1,4 @@
-const APP_ID = ""
+const APP_ID = "425ba218672a42a3acb1356cdc32ffcd"
 
 const UID = Math.floor(Math.random() * 10).toString()
 const CHANNEL_NAME = "main"
