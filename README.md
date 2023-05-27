@@ -1,5 +1,5 @@
 # MeetUs
-Django application for real-time chat and video call.
+Django project for real-time text chat and group video call.
 
 Final project for the Harvard CS50's Web Programming with Python and JavaScript. 
 
@@ -7,6 +7,15 @@ Final project for the Harvard CS50's Web Programming with Python and JavaScript.
 ![Homepage](https://github.com/donato-casiello/meetus/blob/main/presentation_img/homepage3.png "Homepage")
 ![text chat](https://github.com/donato-casiello/meetus/blob/main/presentation_img/text_chat.png "Text chat")
 ![video call](https://github.com/donato-casiello/meetus/blob/main/presentation_img/video-call.png "Video call")
+
+## Distinctiveness and Complexity
+* **Hadle more apps**: this project contains three apps, called "base", "text" and "video". These three applications communicate with each other. It was necessary to organize a solid structure to make them work at their best;
+* **Handle shared files**: the three apps share many files, in particular static files; it was challenging to manage these files between the apps, mostly CSS and JS files
+* **Agora SDK**: for real time features it has been used Agora SDK. Agora.io is a developer platform that provides broadcast, voice and video calls for mobile and web applications through their software development kit (SDK). It's toolkit is written in JavaScript
+* **Managing responsive design with pure CSS**: it has been used only pure CSS, with no framework, to make this application completely responsive, via web and and via mobile
+* **Handle communication between front-end and back-end**: many of the realtime functions required the use of JavaScript. It was therefore necessary to provide many ajax functionality, fetch data without reloading the page, and so on
+* **Virtual environment**: use virtual environment to save the set of tools that are needed to make the application work 
+* **Environ**: use of environ to store all the variables that needed
 
 
 ## Features
@@ -16,7 +25,7 @@ Is the homepage of the project, where the user can choose between real-time text
 ### text
 Is the application that handle the real-time chat 
 ### video
-Is the application that handle the video call
+Is the application that handle the group video call
 
 ## Files & Directories
 - `Main directory`:
@@ -51,17 +60,6 @@ Is the application that handle the video call
      - `tests.py` - testing some features about the video app
   - `env` - virtual environment 
   - `requirements.txt` - all the requirements of the project
-
-
-## Distinctiveness and Complexity
-* **Hadle more apps**: this project contains three apps, called "base", "text" and "video". These three applications communicate with each other. It was necessary to organize a solid structure to make them work at their best;
-* **Handle shared files**: the three apps share many files, in particular static files; it was challenging to manage these files between the apps, mostly CSS and JS files
-* **Agora SDK**: for real time features it has been used Agora SDK. Agora.io is a developer platform that provides broadcast, voice and video calls for mobile and web applications through their software development kit (SDK). It's toolkit is written in JavaScript
-* **Managing responsive design with pure CSS**: it has been used only pure CSS, with no framework, to make this application completely responsive, via web and and via mobile
-* **Handle communication between front-end and back-end**: many of the realtime functions required the use of JavaScript. It was therefore necessary to provide many ajax functionality, fetch data without reloading the page, and so on
-* **Virtual environment**: use virtual environment to save the set of tools that are needed to make the application work 
-* **Environ**: use of environ to store all the variables that needed
-
 
 ## Getting started
 1. ### Clone repository
