@@ -82,6 +82,7 @@ In order to use this project you will need to replace Agora credentials. Create 
  
   - in `text.js` replace:
   
+  
     ```
     const APP_ID = "YOUR_APP_ID"
     ```
@@ -89,21 +90,22 @@ In order to use this project you will need to replace Agora credentials. Create 
   - To use video call application create an app with also `app_certificate`
     - in `video/views.py` replace:
     
-
-    ```
-    def getToken(request):
-    #Build token with uid
-    appId = "YOUR_APP_ID"
-    appCertificate = "YOUR_APP_CERTIFICATE"
     
-    ```
+
+      ```
+      def getToken(request):
+      #Build token with uid
+      appId = "YOUR_APP_ID"
+      appCertificate = "YOUR_APP_CERTIFICATE"
+
+      ```
     
     - in `video/video.js` replace:
     
     
-    ```
-    const APP_ID = "YOUR_APP_ID"
-    ```
+      ```
+      const APP_ID = "YOUR_APP_ID"
+      ```
     
  4. ### Run the server
  
